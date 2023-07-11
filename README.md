@@ -2,9 +2,10 @@
 
 - AppRouterを用いたNext.jsの設計を作成中
 - これから実施予定
-- graphql-codegenを動かす
+  - graphql-codegenを動かす
   - コンポーネントの切り分け方を考える
   - ディレクトリ構成を考える
+  - SchemeからMockサーバーを建ててみる
 
 ## 手順
 
