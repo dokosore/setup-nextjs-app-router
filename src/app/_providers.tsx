@@ -1,6 +1,6 @@
 'use client';
 
-import { client } from '@/providers/graphql';
+import { client } from '@/graphql/graphql';
 import { ApolloProvider } from '@apollo/client';
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider } from '@chakra-ui/react';
