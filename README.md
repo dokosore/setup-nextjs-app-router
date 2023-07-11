@@ -1,5 +1,11 @@
 # ドコソレ流 Next.js AppRouter Settings
 
+- AppRouterを用いたNext.jsの設計を作成中
+- これから実施予定
+- graphql-codegenを動かす
+  - コンポーネントの切り分け方を考える
+  - ディレクトリ構成を考える
+
 ## 手順
 
 ### create-next-app
@@ -39,6 +45,25 @@ npm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugi
 - .vscode/settings.json
 - .vscode/extensions.json
 
+### その他のインストール
+
+```bash
+npm i @apollo/client graphql
+npm i -D @graphql-codegen/cli @graphql-codegen/typed-document-node @graphql-codegen/typescript @graphql-codegen/typescript-operations
+npm i jotai
+npm i react-hook-form
+npm i dayjs
+```
+
 ## ディレクトリ構成
 
 - 斉藤が考案中...
+
+## 備考
+
+### ChakraUIのRSCへの対応予定
+
+- 現時点ではChakraUIはRSCに対応していない
+- ChakraUI側は、RSCでChakraUIを使えるようにランタイムCSS-in-JSを取り除こうとしている
+- これにはもうしばらく時間がかかりそう（まだ研究段階）
+- [参考リンク](https://www.adebayosegun.com/blog/the-future-of-chakra-ui)
