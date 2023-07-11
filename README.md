@@ -8,7 +8,7 @@
 npx create-next-app@latest --ts --use-npm {アプリの名前}
 ```
 
-```bash
+```
 ✔ Would you like to use ESLint? … Yes
 ✔ Would you like to use Tailwind CSS? … No
 ✔ Would you like to use `src/` directory? … Yes
