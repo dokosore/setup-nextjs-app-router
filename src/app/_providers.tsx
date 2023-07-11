@@ -1,9 +1,9 @@
 'use client';
 
+import { client } from '@/providers/graphql';
 import { ApolloProvider } from '@apollo/client';
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider } from '@chakra-ui/react';
-import { client } from './test/graphql';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (

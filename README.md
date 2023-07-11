@@ -59,6 +59,7 @@ npm i dayjs
 ## ディレクトリ構成
 
 - 斉藤が考案中...
+- [Next.js公式の説明](https://nextjs.org/docs/app/building-your-application/routing/colocation)
 
 ## 備考
 

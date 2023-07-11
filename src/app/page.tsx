@@ -1,6 +1,7 @@
 'use client';
 
-import { Button, Text, VStack } from '@/app/common/components/chakra';
+import LocationCard from '@/app/_components/LocationCard';
+import { Button, SimpleGrid, Text, VStack } from '@/common/chakra';
 import { gql, useQuery } from '@apollo/client';
 
 const GET_LOCATIONS = gql`
@@ -16,21 +17,16 @@ const GET_LOCATIONS = gql`
 
 const Home = () => {
   const FetchComp = () => {
-    const { data, loading, error, refetch } = useQuery(GET_LOCATIONS);
+    const { data, loading, error } = useQuery(GET_LOCATIONS);
     if (loading) return <>loading</>;
     if (error) return <>error</>;
     if (!data) return <>no data</>;
     return (
-      <VStack mt="40px" p="40px" rounded="md" bg="gray.100">
+      <SimpleGrid columns={3} spacing="8px" mt="40px">
         {data.locations.map((location: any) => (
-          <>
-            <Text fontSize="sm">{location.name}</Text>
-          </>
+          <LocationCard key={location.id} name={location.name} description={location.description} />
         ))}
-        <Button colorScheme="green" size="xs" onClick={() => void refetch()}>
-          更新
-        </Button>
-      </VStack>
+      </SimpleGrid>
     );
   };
 
