@@ -17,7 +17,7 @@ npx create-next-app@latest --ts --use-npm {アプリの名前}
 ✔ What import alias would you like configured? … @/*
 ```
 
-## Volta の環境を合わせる
+### Volta の環境を合わせる
 
 - `volta pin node@18`
 - `volta pin npm@8`
@@ -28,7 +28,7 @@ npx create-next-app@latest --ts --use-npm {アプリの名前}
 npm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import prettier eslint-config-prettier
 ```
 
-## ファイルのコピー
+### ファイルのコピー
 
 以下のファイルを全てこのプロジェクトからコピーして、移す
 
